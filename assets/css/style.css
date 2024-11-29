@@ -590,8 +590,8 @@ p {
 }
 
 .default-padding {
-	padding-top: 120px;
-	padding-bottom: 120px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -5569,7 +5569,7 @@ a.pf-btn i {
 	display: flex;
 	align-items: center;
 	padding-top: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .brand-conetnt {
@@ -5581,7 +5581,7 @@ a.pf-btn i {
 
 .brand-conetnt h2 {
 	margin: 0;
-	font-size: 100px;
+	font-size: 40px;
 	margin: 0 50px;
 	font-weight: 900;
 	line-height: 1.4;
