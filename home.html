@@ -266,34 +266,349 @@
         <!-- End Navigation -->
     </header>
     <!-- End Header -->
-
+    
     <!-- Start Banner 
     ============================================= -->
-    <div class="banner-style-one" style="background-image: url(assets/img/shape/1.png);">
-        <div class="container">
-            <div class="row align-center">
-                <div class="col-lg-8 banner-one-item">
-                    <h4>Innovative IT Solutions for Your Needs</h4>
-                    <h2 style="font-size: 30px; font-family: Roboto;">Providing CCTV, automation, and computer accessories services for your business.</h2>
-                </div>
-                <div class="col-lg-3 offset-lg-1 banner-one-item text-center">
-                    <div class="curve-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
-                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                            <text><textPath href="#textPath">Your trusted IT solutions</textPath></text>
-                        </svg>
-                        <a href="" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
+    <div style="background-image: none;"></div>
+<div class="banner-style-one" style="background-image: url(assets/img/shape/1.png);">
+    <div class="container">
+        <div class="row align-center">
+            <!-- Left Section -->
+            <div class="col-lg-8 banner-one-item">
+                <h4>Innovative IT Solutions for Your Needs</h4>
+                <div class="rotating-content">
+                    <div class="rotating-item">
+                        <h2 style="font-size: 30px; font-family: Roboto; color: #000;">Your One-Stop Solution for IT, Security, and Automation Services.</h2>
+                        <p style="font-size: 16px; font-family: Roboto; color: #333;">
+                            We provide cutting-edge IT solutions tailored to meet your unique needs, ensuring seamless integration and top-notch security.
+                        </p>
                     </div>
+                    <div class="rotating-item">
+                        <h2 style="font-size: 30px; font-family: Roboto; color: #000;">Delivering Excellence in Technology Solutions.</h2>
+                        <p style="font-size: 16px; font-family: Roboto; color: #333;">
+                            Our team specializes in delivering unparalleled technology solutions, driving growth and innovation for your business.
+                        </p>
+                    </div>
+                    <div class="rotating-item">
+                        <h2 style="font-size: 30px; font-family: Roboto; color: #000;">Empowering Businesses with Automation.</h2>
+                        <p style="font-size: 16px; font-family: Roboto; color: #333;">
+                            Streamline your operations with our advanced automation tools designed to boost efficiency and reduce costs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Section with Up-and-Down Animation -->
+            <div class="col-lg-3 offset-lg-1 banner-one-item text-center">
+                <div class="curve-text move-up-down">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
+                        <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
+                        <text><textPath href="#textPath">Your trusted IT solutions</textPath></text>
+                    </svg>
+                    <a href="" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Add the CSS -->
+<style>
+    /* Rotating content container */
+    .rotating-content {
+        position: relative;
+        height: 140px; /* Adjust to fit headings and paragraphs */
+        overflow: hidden;
+    }
+
+    /* Individual rotating items (heading + paragraph) */
+    .rotating-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transform: translateY(100%);
+        animation: rotateContent 9s infinite;
+    }
+
+    /* Animation for headings and paragraphs */
+    @keyframes rotateContent {
+        0%, 30% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        33%, 100% {
+            opacity: 0;
+            transform: translateY(-100%);
+        }
+    }
+
+    /* Specific delays for each content block */
+    .rotating-item:nth-child(1) {
+        animation-delay: 0s;
+    }
+    .rotating-item:nth-child(2) {
+        animation-delay: 3s;
+    }
+    .rotating-item:nth-child(3) {
+        animation-delay: 6s;
+    }
+
+    /* Curve text up-and-down animation */
+    .move-up-down {
+        animation: upDown 3s infinite ease-in-out;
+    }
+
+    /* Keyframe for up-and-down movement */
+    @keyframes upDown {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    /* Styling for the curve text */
+    .curve-text svg {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+        display: block;
+    }
+
+    .curve-text a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #fff;
+    }
+</style>
+
+
+
     <!-- End Banner -->
+
+
+
+
+
+    <!-- About Section -->
+<!-- About Section -->
+<section id="about" class="about-section">
+    <!-- Background Overlay -->
+    <div class="background-overlay"></div>
+  
+    <div class="content-container">
+      <!-- Animated Heading -->
+      <h2 class="animated-heading">
+        About Marvel Technos
+        <span class="underline"></span>
+      </h2>
+  
+      <!-- Subheading -->
+      <p class="about-description">
+        Marvel Technos offers much more than computer repair services. We help our customers manage costs, safeguard data, 
+        improve service, and reduce computer downtime. A single point of contact for all your computer problems and solutions 
+        for your home and business needs.
+      </p>
+  
+      <!-- Hover Interactive Cards -->
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="about-card">
+          <img src="assets/img/DALL·E_product3.png" alt="Innovation">
+          <div class="card-overlay">
+            <h3 style="color: #fff;">Innovative Solutions</h3>
+            <p style="color: #fff;">Pioneering the future with cutting-edge technology tailored for your needs. Marvel Technos brings creativity and efficiency together.</p>
+          </div>
+        </div>
+  
+        <!-- Card 2 -->
+        <div class="about-card">
+          <img src="assets/img/DALL·E.png" alt="Security Systems">
+          <div class="card-overlay">
+            <h3 style="color: #fff;">Advanced Security</h3>
+            <p style="color: #fff;">Empowering your safety with state-of-the-art surveillance and automation systems. Protecting what matters most to you.</p>
+          </div>
+        </div>
+  
+        <!-- Card 3 -->
+        <div class="about-card">
+          <img src="assets/img/DALL·E_product2.png" alt="Customer Focused">
+          <div class="card-overlay">
+            <h3 style="color: #fff;">Customer First</h3>
+            <p style="color: #fff;">Driven by excellence, we deliver solutions that enhance lives, ensuring satisfaction and trust in every service we offer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<style>
+    /* General Styles */
+.about-section {
+  padding: 60px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.9));
+  z-index: 1;
+}
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading */
+.animated-heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #6136ab;
+  position: relative;
+  display: inline-block;
+}
+.animated-heading .underline {
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  bottom: -10px;
+  left: 0;
+  transition: width 0.5s;
+}
+
+/* Subheading */
+.about-description {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.about-card {
+  flex: 1 1 300px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.5s;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+.about-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: transform 0.3s;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  transition: opacity 0.3s;
+  border-radius: 15px;
+  padding: 20px;
+}
+.card-overlay h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.card-overlay p {
+  font-size: 16px;
+}
+
+/* Hover Effects */
+.about-card:hover img {
+  transform: scale(1.1);
+}
+.about-card:hover .card-overlay {
+  opacity: 1;
+}
+.animated-heading:hover .underline {
+  width: 100%;
+}
+
+</style>  
+  
+  <!-- JavaScript for Animations -->
+  <script>
+    // Underline animation for heading
+    document.addEventListener("DOMContentLoaded", () => {
+  // Add underline animation for heading
+  const heading = document.querySelector(".animated-heading .underline");
+  const aboutHeading = document.querySelector(".animated-heading");
+  aboutHeading.addEventListener("mouseover", () => {
+    heading.style.width = "100%";
+  });
+  aboutHeading.addEventListener("mouseout", () => {
+    heading.style.width = "0";
+  });
+
+  // Add hover effects for cards
+  const cards = document.querySelectorAll(".about-card");
+  cards.forEach(card => {
+    const overlay = card.querySelector(".card-overlay");
+    const image = card.querySelector("img");
+
+    card.addEventListener("mouseover", () => {
+      overlay.style.opacity = "1";
+      image.style.transform = "scale(1.1)";
+    });
+
+    card.addEventListener("mouseout", () => {
+      overlay.style.opacity = "0";
+      image.style.transform = "scale(1)";
+    });
+  });
+});
+
+  </script>
+  
+  
+
+
+
 
     <!-- Start Background Move 
     ============================================= -->
-    <div class="banner-animation-zoom">
-        <div class="animation-zoom-banner" id="js-hero" style="background-image: url(assets/img/CCTV-Cameras-1.jpeg);"></div>
+    <!-- <div class="banner-animation-zoom">
+        <div class="animation-zoom-banner" id="js-hero" style="background-image: url(assets/img/CCTV-Cameras-1.jpeg);" style="background: #fba065;"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6">
@@ -301,25 +616,32 @@
                         <div class="inner-content">
                             <h2><strong>28+</strong> Years of experience</h2>
                             <p>
-                                We provide innovative IT solutions, including CCTV services, computer accessories, home automation, and gate automation for your needs.
-                            </p>
+                                Marvel Technos offer much 
+                                more than computer repair services. 
+                                We help our customers, manage cost, 
+                                safeguard data, improve service and 
+                                reduce computer downtime. 
+                                A single point of contact for all your 
+                                computer problems and solutions for 
+                                your home and business needs.                            </p> -->
                             <!-- <a class="btn-animation" href="services.html"><i class="fas fa-arrow-right"></i> <span>Our Services</span></a> -->
-                        </div>
+                        <!-- </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Background Move -->
 
 
      <!-- Start Accordion Portfolio 
     ============================================= -->
     <div class="accrdion-portfolio-area">
-		<div class="container-fluid">
-			<!-- ACCORDION ROW -->
-			<div class="row">
+        <div class="container-fluid">
+            <!-- ACCORDION ROW -->
+            <div class="row">
                 <ul class="accordion-portfolio-lists text-light" id="accordion">
+                    <!-- Home Automation Section -->
                     <li style="background-image: url('assets/img/DALL·E_product3.png');">
                         <h3>Home Automation</h3>
                         <span>01</span>
@@ -327,11 +649,13 @@
                             <span>Design</span>
                             <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Home Automation</a></h2>
                             <p>
-                                Transform your living space with our innovative home automation solutions for convenience and efficiency.
+                                Elevate your lifestyle with our cutting-edge home automation solutions. Seamlessly control lighting, security, climate, and more to create a smarter, more efficient living environment tailored to your needs.
                             </p>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
+    
+                    <!-- CCTV Services Section -->
                     <li class="out" style="background-image: url('https://validthemes.net/site-template/avrix/assets/img/portfolio/h2.jpg');">
                         <h3>CCTV Services</h3>
                         <span>02</span>
@@ -339,12 +663,13 @@
                             <span>Secure</span>
                             <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">CCTV Services</a></h2>
                             <p>
-                                We provide top-notch CCTV installation and maintenance to ensure your security and peace of mind.
-
+                                Safeguard what matters most with our professional CCTV solutions. From installation to maintenance, we provide reliable security systems that ensure constant surveillance and peace of mind.
                             </p>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
+    
+                    <!-- Computer Accessories Section -->
                     <li style="background-image: url('assets/img/DALL·E.png');">
                         <h3>Computer Accessories</h3>
                         <span>03</span>
@@ -352,28 +677,31 @@
                             <span>Photo</span>
                             <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Computer Accessories</a></h2>
                             <p>
-                                CCTV, computers, home automation, and gate automation services provided.
+                                Discover our range of high-quality computer accessories and peripherals. From hardware upgrades to essential add-ons, we’ve got everything to enhance your computing experience.
                             </p>
                             <a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
+    
+                    <!-- Contact Us Section -->
                     <li style="background-image: url('assets/img/DALL·E_product2.png');">
                         <h3>Contact Us</h3>
                         <span>04</span>
                         <div class="accordion-overlay">
                             <span>Creative</span>
-                            <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Contact Us anytime you want</a></h2>
+                            <h2><a href="#" data-bs-toggle="modal" data-bs-target="#projectSingleModal">Contact Us Anytime</a></h2>
                             <p>
-                                We encourage contacting us and enquring about our services and other details.
+                                We are here to help! Reach out to us for inquiries about our services, product details, or any other assistance. Our team is dedicated to providing prompt and helpful responses to your questions.
                             </p>
                             <a href="contact-us.html"><i class="fas fa-arrow-right"></i></a>
                         </div>
                     </li>
                 </ul>
-			</div>
-			<!-- BEGIN NEW ROW AFTER ACCORDION -->
+            </div>
+            <!-- BEGIN NEW ROW AFTER ACCORDION -->
         </div>
     </div>
+    
     <!-- End According Portfolio -->
 
 
@@ -478,9 +806,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
-        
                                     <p>
                                         Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.  Facilisis inceptos nec, potenti nostra aenean lacinia varius semper ant nullam nulla primis placerat facilisis. Netus lorem rutrum arcu dignissim at sit morbi phasellus nascetur eget urna potenti cum vestibulum cras. Tempor nonummy metus lobortis. Sociis velit etiam, dapibus. Lectus vehicula pellentesque cras posuere tempor facilisi habitant lectus rutrum pede quisque hendrerit parturient posuere mauris ad elementum fringilla facilisi volutpat fusce pharetra felis sapien varius quisque class convallis praesent est sollicitudin donec nulla venenatis, cursus fermentum netus posuere sociis porta risus habitant malesuada nulla habitasse hymenaeos. Viverra curabitur nisi vel sollicitudin dictum natoque ante aenean elementum curae malesuada ullamcorper.
                                     </p>
@@ -511,7 +836,7 @@
 
     <!-- Start Portfolio 
     ============================================= -->
-    <div class="portfolio-style-one-area default-padding bg-gray">
+    <div class="project-style-one-area default-padding bg-gray">
 
         <div class="container">
             <div class="heading-left">
@@ -522,90 +847,127 @@
                             <h2 class="title">Our Gallery</h2>
                         </div>
                     </div>
-                    <div class="col-lg-5 offset-lg-1">
-                        <p>
-                            Explore our IT solutions, CCTV services, and automation projects.
-
-                        </p>
-                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container">
-            <div class="row mt--50 mt-md-3-0 mt-xs--30">
-                <!-- Single Item -->
-                <div class="col-lg-6 item-center">
-                    <div class="portfolio-style-one animate" data-animate="fadeInUp">
-                        <div class="thumb-zoom">
-                            <img src="https://th.bing.com/th/id/OIP.GhB16d4mEunwhqM3mxNawgHaFj?w=244&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Not Found">
+        <div class="container-fill">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="project-style-one-items">
+
+                        <!-- Navigation -->
+                        <div class="project-nav">
+                            <div class="nav-items">
+                                <div class="project-button-prev"></div>
+                                <div class="project-button-next"></div>
+                            </div>
                         </div>
-                        <div class="pf-item-info">
-                            <div class="content-info">
-                                <span>CCTV</span>
-                                <h2><a href="#">Best Security</a></h2>
+
+                        <div class="project-center-stage-carousel swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="assets/img/DALL·E-4. .png" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>CCTV</span>
+                                                <h4><a href="project-details.html">Best Security</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="assets/img/DALL·E-5.png" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>Home Automation</span>
+                                                <h4><a href="project-details.html">Creative Home Automation</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="assets/img/DALL·E-6.png" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>Solar</span>
+                                                <h4><a href="project-details.html">Electrical Independance is waiting for you!!</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <!-- <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="https://th.bing.com/th/id/OIP.f7nYzPFNIhucRBBDcp5BTgHaEK?w=272&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;dpr=1.3&amp;pid=1.7" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>Research</span>
+                                                <h4><a href="project-details.html">Content Optimization</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="assets/img/DALL·E-7.png" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>Computer Accessories</span>
+                                                <h4><a href="project-details.html">Quality speak's itself</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Single Item -->
+                                <!-- Single Item -->
+                                <!-- <div class="swiper-slide">
+                                    <div class="project-style-one">
+                                        <img src="assets/img/800x600.png" alt="Thumb">
+                                        <div class="overlay">
+                                            <div class="link">
+                                                <a href="project-details.html"><i class="fas fa-arrow-right"></i></a>
+                                            </div>
+                                            <div class="content">
+                                                <span>Digital</span>
+                                                <h4><a href="project-details.html">Development Agency</a></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <!-- End Single Item -->
                             </div>
-                            <div class="button">
-                                <a href="#" class="pf-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
+            
                         </div>
                     </div>
                 </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-lg-6 item-center">
-                    <div class="portfolio-style-one animate" data-animate="fadeInDown" data-duration="1.5s">
-                        <div class="thumb-zoom">
-                            <img src="https://th.bing.com/th/id/OIP.EL3hL8xZXYSqSAbI84JGigHaE6?w=264&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Not Found">
-                        </div>
-                        <div class="pf-item-info">
-                            <div class="content-info">
-                                <span>Home Automation</span>
-                                <h2><a href="#">Creative Home Automation</a></h2>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="pf-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-lg-6 item-center">
-                    <div class="portfolio-style-one animate" data-animate="fadeInUp" data-duration="2s">
-                        <div class="thumb-zoom">
-                            <img src="https://th.bing.com/th/id/OIP.SLBQLt72QbinYU5ABlrb6QHaEK?w=322&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Not Found">
-                        </div>
-                        <div class="pf-item-info">
-                            <div class="content-info">
-                                <span>Hardware</span>
-                                <h2><a href="#">Automated gates for enhanced security</a></h2>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="pf-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
-                <!-- Single Item -->
-                <div class="col-lg-6 item-center">
-                    <div class="portfolio-style-one animate" data-animate="fadeInDown" data-duration="2.5s">
-                        <div class="thumb-zoom">
-                            <img src="https://th.bing.com/th/id/OIP.f7nYzPFNIhucRBBDcp5BTgHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Image Not Found">
-                        </div>
-                        <div class="pf-item-info">
-                            <div class="content-info">
-                                <span>Computer Accessories</span>
-                                <h2><a href="#">Quality speak's itself</a></h2>
-                            </div>
-                            <div class="button">
-                                <a href="#" class="pf-btn"><i class="fas fa-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Item -->
             </div>
         </div>
     </div>
@@ -617,16 +979,85 @@
 
 
 
+
+    <!-- Start Team Qualification
+    ============================================= -->
+    <div class="team-qualifcations default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6">
+                    <div class="qualification-grid">
+                        <h2>Work Expertise</h2>
+                        <div class="qualification-item">
+                            <i class="flaticon-data-management"></i>
+                            <h4>CCTV installation</h4>
+                        </div>
+                        <div class="qualification-item">
+                            <i class="flaticon-marketing-agent"></i>
+                            <h4>Computer Repairs</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="skill-items pl-50 pl-md-0 pl-xs-0 mt-md-50 mt-xs-30">
+                        <h2>Personal Skills</h2>
+                        <!-- Progress Bar Start -->
+                        <div class="progress-box">
+                            <h5>Happy Customer</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-width="88">
+                                        <span>360K</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h5>Positive Rating</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-width="95">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h5>Total Branch</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-width="80">
+                                    <span>874+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-box">
+                            <h5>Experience</h5>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" data-width="60">
+                                    <span>35+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Progressbar -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End item -->
+
+
+</div>
+
+
+
+
+
     
 
     <!-- Start Fun Factor 
     ============================================= -->
-    <div class="fun-factor-circle-area default-padding-bottom bg-gray">
+    <!-- <div class="fun-factor-circle-area default-padding-bottom bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="fun-fact-circle-lists">
-                        <!-- Single item -->
                         <div class="fun-fact animate" data-animate="fadeInDown">
                             <div class="counter">
                                 <div class="timer" data-to="360" data-speed="3000">360</div>
@@ -634,8 +1065,6 @@
                             </div>
                             <span class="medium">Customer</span>
                         </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
                         <div class="fun-fact animate" data-animate="fadeInUp" data-duration="0.5s">
                             <div class="counter">
                                 <div class="timer" data-to="98" data-speed="3000">98</div>
@@ -643,8 +1072,6 @@
                             </div>
                             <span class="medium">Positive Rating</span>
                         </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
                         <div class="fun-fact animate" data-animate="fadeInDown">
                             <div class="counter">
                                 <div class="timer" data-to="874" data-speed="3000">874</div>
@@ -652,25 +1079,22 @@
                             </div>
                             <span class="medium">Total Branch</span>
                         </div>
-                        <!-- End Single item -->
-                        <!-- Single item -->
                         <div class="fun-fact animate" data-animate="fadeInUp" data-duration="0.5s">
                             <div class="counter">
                                 <div class="timer" data-to="35" data-speed="1000">35</div>
                             </div>
                             <span class="medium">Years experience</span>
                         </div>
-                        <!-- End Single item -->
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Fun Factor -->
 
     <!-- Start Brand Area 
     ============================================= -->
-    <div class="brand-area relative overflow-hidden bg-gradient text-light">
+    <!-- <div class="brand-area relative overflow-hidden bg-gradient text-light">
         <div class="brand-style-one">
             <div class="container-fill">
                 <div class="row">
@@ -700,16 +1124,16 @@
                                 <div class="item">
                                     <h2>CCTV Services</h2>
                                 </div>
-                                <!-- <div class="item">
+                                <div class="item">
                                     <h2>Development</h2>
-                                </div> -->
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Bradn Area -->
 
     <!-- Start Why Choose Us 
@@ -717,27 +1141,40 @@
     <div class="choose-us-style-one-area default-padding bg-gray">
         <div class="container">
             <div class="row align-center">
+                <!-- Left Image Section -->
                 <div class="col-lg-6">
-                    <div class="choose-us-style-one-thumb">
-                        <img src="assets/img/CCTV-Cameras-1.jpeg" alt="Image Not Found">
-                        <a  href="" class="popup-youtube video-play-button">
-                            <i class="fas fa-play"></i>
-                            <div class="effect"></div>
-                        </a>
+                    <div class="choose-us-style-one-thumb position-relative">
+                        <img src="assets/img/CCTV-Cameras-1.jpeg" alt="Image Not Found" class="img-fluid rounded shadow main-image">
+                        <div class="hover-paragraph position-absolute d-flex justify-content-center align-items-center text-center">
+                            <p class="text-light paragraph-text"></p>
+                        </div>
                     </div>
                 </div>
+    
+                <!-- Right Content Section -->
                 <div class="col-lg-5 offset-lg-1">
-                    <div class="choose-us-style-one d-flex-between">
-                        <div class="top-info">
+                    <div class="choose-us-style-one">
+                        <!-- Top Info -->
+                        <div class="top-info mb-4">
                             <h4 class="sub-title">Why Marvelous</h4>
                             <h2 class="title">Why you should choose Marvelous as your first choice.</h2>
                         </div>
+    
+                        <!-- Bottom Info -->
                         <div class="bottom-info">
                             <ul class="list-item">
-                                <li>Fast Services <strong>01</strong></li>
-                                <li>Low Cost <strong>02</strong></li>
-                                <li>24/7 Customer Support <strong>03</strong></li>
-                                <li>Simple Maintenance <strong>04</strong></li>
+                                <li data-hover-text="Quick and efficient solutions tailored to your needs, ensuring minimal downtime and maximum satisfaction.">
+                                    Fast Services <strong>01</strong>
+                                </li>
+                                <li data-hover-text="Affordable services without compromising on quality, making us the perfect choice for your budget.">
+                                    Low Cost <strong>02</strong>
+                                </li>
+                                <li data-hover-text="Round-the-clock assistance to ensure that you are never left in the dark, no matter the time.">
+                                    24/7 Customer Support <strong>03</strong>
+                                </li>
+                                <li data-hover-text="Easy-to-maintain systems designed to save you time and effort, keeping things running smoothly.">
+                                    Simple Maintenance <strong>04</strong>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -745,7 +1182,150 @@
             </div>
         </div>
     </div>
+<style>
+    .choose-us-style-one-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+.choose-us-style-one-thumb .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+.hover-paragraph {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+    padding: 20px;
+}
+.hover-paragraph p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+}
+.list-item li {
+    position: relative;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.list-item li:hover strong {
+    color: #ff6f61;
+}
+.list-item li:hover {
+    color: #ff6f61;
+}
+
+</style>    
+<script>
+    const listItems = document.querySelectorAll('.list-item li');
+const hoverParagraph = document.querySelector('.hover-paragraph');
+const paragraphText = document.querySelector('.paragraph-text');
+const mainImage = document.querySelector('.main-image');
+
+listItems.forEach((item) => {
+    item.addEventListener('mouseover', () => {
+        const hoverText = item.getAttribute('data-hover-text');
+        paragraphText.textContent = hoverText;
+        hoverParagraph.style.opacity = '1';
+    });
+
+    item.addEventListener('mouseout', () => {
+        hoverParagraph.style.opacity = '0';
+    });
+});
+
+</script>
     <!-- End Why Choose Us -->
+
+
+
+
+
+    <!-- Start Pricing 
+    ============================================= -->
+    <div class="pricing-style-one-area default-padding bg-gray">
+
+        <!-- Shape Decoration -->
+        <div class="shape-left-top">
+            <img src="assets/img/shape/11.png" alt="Decoration Shape">
+        </div>
+    
+        <div class="container">
+            <div class="pricing-items">
+                <div class="row align-center">
+    
+                    <!-- Pricing Intro -->
+                    <div class="col-xl-5 col-lg-4">
+                        <h4 class="sub-title">Affordable Packages</h4>
+                        <h2 class="title">Flexible Pricing <br> Tailored for You</h2>
+                        <p>
+                            Choose from our carefully curated packages designed to meet your needs and budget. From individual services to bundled deals, we ensure value and quality every step of the way.
+                        </p>
+                        <h5>Sign up now and enjoy <strong>50% Off</strong> on your first purchase!</h5>
+                    </div>
+    
+                    <!-- Pricing Plans -->
+                    <div class="col-xl-6 offset-xl-1 col-lg-7 offset-lg-1">
+                        
+                        <!-- Pricing Plan 1 -->
+                        <div class="pricing-style-one">
+                            <div class="left">
+                                <h4>Comprehensive Security</h4>
+                                <span>15 Days Free Trial</span>
+                                <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us.html">Get Started</a>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>Surveillance Setup</li>
+                                    <li>System Maintenance</li>
+                                    <li>24/7 Monitoring</li>
+                                </ul>
+                                <h2><sup>$</sup>48</h2>
+                            </div>
+                        </div>
+    
+                        <!-- Pricing Plan 2 -->
+                        <div class="pricing-style-one active">
+                            <div class="left">
+                                <h4>Home Automation</h4>
+                                <span>7 Days Free Trial</span>
+                                <a class="btn mt-25 btn-sm circle btn-border light" href="contact-us.html">Get Started</a>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>Smart Device Integration</li>
+                                    <li>Energy Management</li>
+                                    <li>Remote Access Control</li>
+                                </ul>
+                                <h2><sup>$</sup>24</h2>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- End Pricing -->
+
+
+
+
 
     <!-- Start Testimonial Area 
     ============================================= -->
@@ -861,12 +1441,12 @@
                         </div>
                     </div>
                     <!-- Navigation -->
-                    <div class="testimonial-one-swiper-nav">
-                        <!-- Pagination -->
+                    <!-- <div class="testimonial-one-swiper-nav">
+                        Pagination
                         <div class="testimonial-one-pagination"></div>
                         <div class="testimonial-one-button-prev"></div>
-                        <div class="testimonial-one-button-next"></div>
-                    </div>
+                        <div class="testimonial-one-button-next"></div> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>

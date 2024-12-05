@@ -6952,7 +6952,7 @@ footer .f-item.link li a:hover {
 	transform: translateX(-50%);
 	font-weight: 900;
 	font-size: 80px;
-	bottom: -50px;
+	bottom: -20px;
 	-webkit-text-stroke: 1px var(--white);
 	color: transparent;
 	transition: all 0.35s ease-in-out;
@@ -9005,7 +9005,7 @@ ul.contact-address > li:first-child {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(../img/logo-icon.png);
+    /* background: url(../img/DALL·E-7.png);  This is the preloader image */
     transform: translate(-50%, -50%);
     background-repeat:  no-repeat;
     background-position: center;
